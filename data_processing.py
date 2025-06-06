@@ -12,28 +12,7 @@ df = data_cleanse(df)
 df_filter = df[df["booking_date"] > "2024-01-01"]
 categories = [i for i in df["category_high_lvl"].unique()]
 
-generate_chart_with_templates (df_filter, categories)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+generate_chart_with_templates(df_filter, categories)
 
 
 df = pd.read_csv(
