@@ -6,8 +6,8 @@ from pathlib import Path
 # Add your source directory to the path (adjust if needed)
 sys.path.append("D:/finance")  # or use "." if everything is local
 
-from chart_funcs import generate_chart_with_templates
-from data_cleanse import data_cleanse
+from funcs.chart_funcs import generate_chart_with_templates
+from funcs.data_cleanse import data_cleanse
 
 
 def main():
