@@ -78,6 +78,13 @@ code .
 
 ---
 
+## 💻 Make a output from terminal
+
+```powershell
+cd D:/finance
+python main.py --csv george.csv --output chart.html --since 2024-01-01
+```
+
 ## Git repo and acc activation
 
 ```powershell
