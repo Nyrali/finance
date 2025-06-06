@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resizable Stacked Chart</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    :root {
+      --bg-color-light: #fff;
+      --bg-color-dark: #1e1e1e;
+      --text-color-light: #000;
+      --text-color-dark: #eee;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--bg-color-light);
+      color: var(--text-color-light);
+      margin: 0;
+      padding: 0;
+      transition: background 0.4s, color 0.4s;
+    }
+    .chart-container {
+      resize: both;
+      overflow: auto;
+      width: 90%;
+      max-width: 2560px;
+      height: __HEIGHT__;
+      border: 2px dashed #ccc;
+      margin: 20px auto;
+      padding: 10px;
+    }
+    body.dark-mode .chart-container {
+      border-color: #666;
+    }
+    canvas {
+      width: 100% !important;
+      height: 100% !important;
+    }
+    #popup {
+      display: none;
+      position: absolute;
+      z-index: 9999;
+      background: white;
+      border: 2px solid #444;
+      padding: 12px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      font-size: 18px;
+      max-width: 500px;
+      white-space: pre-wrap;
+      transition: background 0.3s, color 0.3s;
+    }
+    #control-bar {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      display: flex;
+      gap: 10px;
+      z-index: 1000;
+    }
+    #toggle-theme,
+    #palette-picker {
+      background-color: #333;
+      color: white;
+      font-size: 16px;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    #toggle-theme:hover,
+    #palette-picker:hover {
+      background-color: #555;
+    }
+    .dark-mode #toggle-theme,
+    .dark-mode #palette-picker {
+      background-color: #999;
+      color: #000;
+    }
+  </style>
+</head>

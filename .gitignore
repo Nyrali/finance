@@ -1,0 +1,9 @@
+# Ignore all CSV files
+*.csv
+
+# Optional: Ignore system/IDE files
+__pycache__/
+*.pyc
+.vscode/
+.env
+.venv/
