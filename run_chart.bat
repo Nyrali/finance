@@ -10,4 +10,7 @@ pip install -r requirements.txt
 :: Run the main script
 python main.py --csv george.csv --output chart.html --since 2024-01-01
 
+:: Open the resulting HTML file in default browser
+start chart.html
+
 pause
