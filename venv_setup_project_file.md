@@ -9,7 +9,7 @@ This guide sets up a virtual Python environment (`venv`) for a project and links
 ### 1. Switch to desired drive
 
 ```powershell
-D:
+cd D:
 ```
 
 ### 2. Create project folder if needed
@@ -66,7 +66,7 @@ Paste the following content:
 
 Each time you want to work on your project:
 
-```powershell
+```powershellpython main.py
 cd D:\project_file
 .\venv\Scripts\Activate.ps1
 code .
